@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #020202;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #75e70b;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+section#home {
+    background-color: #f4f4f4;
+}
+
+section #formations, section#contact, section#inscription, section#temoignages, section#galerie {
+    border-top: 1px solid #ddd;
+ 
+   
+
+    
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: hwb(210 96% 3%);
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    
+}
+
+form button:hover {
+    background-color: #9cee05;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.temoignage {
+    background-color: #b7c7c9;
+    border: 1px solid #ddd;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+.galerie {
+    display: flex;
+    gap: 10px;
+  
+}
+
+.galerie img {
+    width: 13%;
+}
+
+#search {
+    width: 30%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: rgb(187, 201, 202);
+}
+#logo {
+    position: absolute;
+    top: 30px; 
+    right: 80px;
+    height: 250px; 
+    width: auto;
+ 
+
+}
+
+#contact {
+    color: rgb(14, 89, 228);
+}
+.ben{
+    display: block;
+    margin: auto;
+     top: 30px; 
+    right: 30px;
+    height: 150px;
+}
+aside {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-image {
+   width: 50pc;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

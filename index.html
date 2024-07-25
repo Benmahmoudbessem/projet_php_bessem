@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre de Formation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Centre de Formation Ben Mahmoud</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="login.php" target="_blank">connexion</a></li>
+                <li><a href="register.php" target="_blank">Inscription</a></li>
+
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="fichier.php"  target="_blank">Inscription aux formation</a></li>
+                
+                <img src="bessem.jpeg" alt="Image " id="logo" style="width: auto; height: 100px; position: absolute;">
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Bienvenue au Centre de Formation Ben Mahmoud </h2>
+        <p>Votre succès commence ici. Découvrez nos formations variées et de qualité.</p>
+        <input type="text" id="search" placeholder="Rechercher une formation...">
+    </section>
+    
+    <section id="formations">
+        <h2>Nos Formations</h2>
+        <ul id="formationList">
+
+            <li>Développement Web</li>
+            <li>Marketing Digital</li>
+            <li>java </li>
+            <li>Anglais </li>
+            <li>Francais </li>
+           
+        </ul>
+    </section>
+    
+    <aside>
+        
+        <img src="image.png" alt="Image Prominente" id="moi">
+       <br>  <button onclick="changer()" > changer image</button>
+    </aside>
+
+    <section id="temoignages">
+        <h2>Témoignages</h2>
+        <div class="temoignage">
+            <p>"La formation en développement web était excellente et m'a permis de trouver un emploi rapidement." - Sami bouhkili</p>
+        </div>
+        <div class="temoignage">
+            <p>"J'ai adoré la formation en marketing digital. Les formateurs sont très compétents." - Bilel Mraydi</p>
+        </div>
+        <div class="temoignage">
+            <p>"Merci bien Msr Bessem le directeur de centre Ben Mahmoud." - Sana Ben Mouhmed</p>
+        </div>
+    </section>
+    
+    <section id="galerie">
+        <h2>Galerie de notre Centre</h2>
+        <div class="galerie">
+            <img src="foto.jpg" alt="Image 1">
+            <img src="foto2.jpg" alt="Image 2">
+            <img src="foto3.jpg" alt="Image 3">
+            <img src="foto4.jpeg" alt="Image 4">
+            <img src="foto5.jpeg" alt="Image 5">
+            <img src="foto6.jpeg" alt="Image 6">
+            <img src="foto7.jpeg" alt="Image 7">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email: info@benmahmoudbessem.com</p>
+        <p>Téléphone: 53 675 201 </p>
+        <p>Adresse: Ariana ville </p>
+    </section>
+    
+    
+    <section id="inscription">
+        <h2><Inscription</h2>
+        <form id="inscriptionForm" action="fichier.php" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="formation">Formation:</label>
+            <select id="formation" name="formation"  required>
+                <option value="dev web">Développement Web</option>
+                <option value="marketing">Marketing Digital</option>
+                <option value="java">java</option>
+                <option value="anglais">Anglais</option>
+                <option value="francais">Francais</option>
+            </select>
+
+            
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+   
+    
+    
+    <footer>
+        <p>&copy; 2024 Bessem Ben Mahmoud</p>
+        <ul>
+            <li><a href= https://www.facebook.com  target="_blank">Facebook</a></li>
+            <li><a href=https://x.com/Bessembenben target="_blank">Twitter</a></li>
+            <li><a href=https://www.linkedin.com/in/bessem-ben-mahmoud-724470184/ target="_blank">LinkedIn</a></li>
+        </ul>
+        <img src="imaget.png" alt="Footer Image" class="footer-image"  >
+    </footer>
+    </footer>
+
+    
+
+    <script src="js.js"></script>
+
+    
+</body>
+</html>
