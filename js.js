@@ -13,7 +13,7 @@ document
     }
 
     alert(
-      `Merci ${name} pour votre inscription à la formation ${formation}.\nNous vous contacterons bientôt à votre e-mail : ${email}.`
+      `Merci ${name} pour votre  intérêt  à la formation ${formation}.\nNous vous contacterons bientôt à votre e-mail : ${email}. pour valider avec`
     );
   });
 

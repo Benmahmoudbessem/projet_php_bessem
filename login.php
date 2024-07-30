@@ -15,17 +15,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $stmt = $conn->prepare("SELECT id, password FROM user WHERE username = ?");
+    $stmt = $conn->prepare("SELECT id, password, profile_pic FROM user WHERE username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $stmt->store_result();
-    $stmt->bind_result($id, $hashed_password);
+    $stmt->bind_result($id, $hashed_password, $profile_pic);
 
     if ($stmt->num_rows > 0) {
         $stmt->fetch();
         if (password_verify($password, $hashed_password)) {
             $_SESSION['user_id'] = $id;
-            header("Location: index.html");
+            $_SESSION['profile_pic'] = $profile_pic;
+            header("Location: profile.php");
         } else {
             echo "Invalid password!";
         }

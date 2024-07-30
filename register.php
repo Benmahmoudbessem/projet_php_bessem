@@ -31,7 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param("sss", $username, $password, $imageURL);
 
     if ($stmt->execute()) {
-        echo "User registered successfully! welcome!!";
+        echo "User registered successfully! Welcome!!<br>";
+        echo "<img src='" . $imageURL . "' alt='Profile Picture' style='width:150px;height:150px;'><br>";
+        echo "Username: " . htmlspecialchars($username);
     } else {
         echo "Error: " . $stmt->error;
     }
